@@ -1,0 +1,6 @@
+<h1>{{title}}</h1>
+<nav >
+    <span>go dashboard</span><mat-slide-toggle  (click)="getChk()" [(ngModel)]="chk" routerLink={{ruta}} >go Heroes</mat-slide-toggle>
+</nav>
+<router-outlet></router-outlet>
+<app-messages></app-messages>

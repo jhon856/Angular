@@ -1,0 +1,29 @@
+<div class="container color-dark">
+  <div class="col">
+    <mat-card>
+      <mat-form-field>
+        <input matInput [(ngModel)]="answer" placeholder="Que deseas en tu Pizza?">
+      </mat-form-field>
+
+      <br>
+
+      <button color="accent" mat-raised-button (click)="showAnswer()">Add Ingredientes</button>
+      <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+    </mat-card>
+
+    <mat-card *ngIf="answerDisplay">
+      <h3 >{{ answerDisplay }} Fue Agregado</h3>
+    </mat-card>
+
+  </div>
+  <div class="col" *ngIf="answerDisplay"  [@answers]="answers.length">
+    <mat-card>
+      <p >
+       Lista Ingredientes
+      </p>
+      <mat-card  class="life-container " *ngFor="let an of answers; let i=index" (click)="removeItem(i)">
+        {{ an }}
+      </mat-card>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 50% auto;
+   
+}
+
+.life-container {
+  padding:.2em;
+  cursor:pointer;
+  background:rgb(219, 219, 219);
+}

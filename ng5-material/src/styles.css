@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body {
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://www.laguiadelvaron.com/wp-content/uploads/2017/01/google.com_.mx-pizza-730x487.jpg");
+}
